@@ -33,9 +33,9 @@ import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
-    #run_test_problem1a()
+    run_test_problem1a()
     run_test_problem1b()
-    #run_test_problem1c()
+    run_test_problem1c()
 
 
 ###############################################################################
@@ -208,7 +208,7 @@ def run_test_problem1b():
     format_string = ' problem 1b(  { }  {  }  )'
     test_results = [0, 0]
     expected = 5
-    print_actual_result_of_test((3, 5), expected, test_results, format_string)
+    print_expected_result_of_test([3, 5], expected, test_results, format_string)
     actual = problem1b(3, 5)
     print_actual_result_of_test(expected, actual, test_results, precision = 1)
 
@@ -367,6 +367,7 @@ def problem1c(n):
 # Our tests use the following to print error messages in red.
 # Do NOT change it.  You do NOT have to do anything with it.
 ###############################################################################
+
 
 def print_expected_result_of_test(arguments, expected,
                                   test_results, format_string):
